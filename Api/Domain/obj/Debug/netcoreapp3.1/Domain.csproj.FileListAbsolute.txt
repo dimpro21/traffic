@@ -24,3 +24,16 @@ C:\Workout\traffichook\ApiMagazine\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.
 C:\Workout\traffichook\ApiMagazine\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Workout\traffichook\ApiMagazine\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
 C:\Workout\traffichook\ApiMagazine\Domain\obj\Debug\netcoreapp3.1\Domain.genruntimeconfig.cache
+C:\Workout\traffic\Api\Domain\bin\Debug\netcoreapp3.1\sqlDBFirst.txt
+C:\Workout\traffic\Api\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\Workout\traffic\Api\Domain\bin\Debug\netcoreapp3.1\Domain.runtimeconfig.json
+C:\Workout\traffic\Api\Domain\bin\Debug\netcoreapp3.1\Domain.runtimeconfig.dev.json
+C:\Workout\traffic\Api\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Workout\traffic\Api\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+C:\Workout\traffic\Api\Domain\obj\Debug\netcoreapp3.1\Domain.genruntimeconfig.cache

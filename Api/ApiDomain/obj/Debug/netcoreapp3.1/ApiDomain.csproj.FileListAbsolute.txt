@@ -1,0 +1,9 @@
+C:\Workout\traffic\Api\ApiDomain\bin\Debug\netcoreapp3.1\ApiDomain.deps.json
+C:\Workout\traffic\Api\ApiDomain\bin\Debug\netcoreapp3.1\ApiDomain.dll
+C:\Workout\traffic\Api\ApiDomain\bin\Debug\netcoreapp3.1\ApiDomain.pdb
+C:\Workout\traffic\Api\ApiDomain\obj\Debug\netcoreapp3.1\ApiDomain.csprojAssemblyReference.cache
+C:\Workout\traffic\Api\ApiDomain\obj\Debug\netcoreapp3.1\ApiDomain.AssemblyInfoInputs.cache
+C:\Workout\traffic\Api\ApiDomain\obj\Debug\netcoreapp3.1\ApiDomain.AssemblyInfo.cs
+C:\Workout\traffic\Api\ApiDomain\obj\Debug\netcoreapp3.1\ApiDomain.csproj.CoreCompileInputs.cache
+C:\Workout\traffic\Api\ApiDomain\obj\Debug\netcoreapp3.1\ApiDomain.dll
+C:\Workout\traffic\Api\ApiDomain\obj\Debug\netcoreapp3.1\ApiDomain.pdb

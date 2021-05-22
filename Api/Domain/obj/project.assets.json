@@ -5803,11 +5803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workout\\traffichook\\ApiMagazine\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Workout\\traffichook\\ApiMagazine\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\pa21\\.nuget\\packages\\",
-      "outputPath": "C:\\Workout\\traffichook\\ApiMagazine\\Domain\\obj\\",
+      "outputPath": "C:\\Workout\\traffic\\Api\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pa21\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,17 +6,20 @@ using System.Linq;
 
 namespace Domain.Helpers
 {
-    public static class VehicleDatumHelper
+    /// <summary>
+    /// Хелпер для работы с датчиками
+    /// </summary>
+    public static class SensorHelper
     {
         /// <summary>
-        /// Добавление новых даннах о проезде автомобиля    
+        /// Добавление Датчика
         /// </summary>
-        /// <param name="model"></param>
-        public static void Add(VehicleDatum model)
+        /// <param name="id"></param>
+        public static void Add(int id)
         {
             using (var dc = new traffichookContext())
             {
-                dc.VehicleData.Add(model);
+                dc.Sensors.Add(new Sensor() { KeyExt = id});
                 dc.SaveChanges();
             }
         }

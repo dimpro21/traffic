@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 using Domain.Interfaces;
 using Domain.Repository;
 using Newtonsoft.Json;
+using Domain.Helpers;
 using Domain.Models;
+using ApiDomain.Models;
 
 namespace Api.Controllers
 {
@@ -15,26 +17,26 @@ namespace Api.Controllers
     [Route("[controller]/[action]")]
     public class VhicleDataController : ControllerBase
     {
-        private IRepository repository;
+        private IVehicleDatumRepository repository;
 
-        public VhicleDataController(IRepository rep)
+        public VhicleDataController(IVehicleDatumRepository rep)
         {
             repository = rep;
         }
 
         /// <summary>
-        /// /Product/AddProduct
+        /// /VhicleData/AddData
         /// Добавление нового продукта
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-        public string AddData(VehicleDatum model)
+        public string AddSensor(VehicleDatum model)
         {
             string result = "";
             try
             {
-                VehicleDatumHelper.AddProduct(model);
+                VehicleDatumHelper.Add(model);
             }
             catch (Exception ex)
             {
@@ -44,33 +46,42 @@ namespace Api.Controllers
         }
 
         /// <summary>
-        /// 
+        /// /VhicleData/GetAllVhicleDataForDate
+        /// Получить все данные 
         /// </summary>
+        /// <param name="model"></param>
         /// <returns></returns>
-        [HttpGet]
-        public string GetAllData()
+        [HttpPost]
+        public string GetAllVhicleDataForDate(GetDataForDateModel model)
         {
-
-        }
-        /// <summary>
-        /// /Product/DeleteProduct/?id={id}
-        /// Удаление продукта
-        /// </summary>
-        /// <param name="id">Идентификатор продукта</param>
-        /// <returns></returns>
-        [HttpGet]
-        public string DeleteProduct(int id)
-        {
-            string result = "";
             try
             {
-                ProductHelper.DeleteProduct(id);
+                var result = repository.GetAllVhicleDataWithDate(model.FirstDate, model.SecondDate);
+                return JsonConvert.SerializeObject(result);
             }
-            catch (Exception ex)
+            catch
             {
-                result = ex.Message;
+                return null;
             }
-            return result;
+        }
+
+        /// <summary>
+        /// /VhicleData/GetDataForSensor
+        /// Получить данные связанные с сенсором
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public string GetDataForSensor(GetDataForSensor model)
+        {
+            try
+            {
+                var result = repository.GetAllVhicleDataForSensor(model.key, model.firstDate, model.secondDate);
+                return JsonConvert.SerializeObject(result);
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }

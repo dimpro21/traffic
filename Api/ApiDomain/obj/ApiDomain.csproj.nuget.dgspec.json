@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj": {}
+    "C:\\Workout\\traffic\\Api\\ApiDomain\\ApiDomain.csproj": {}
   },
   "projects": {
-    "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj": {
+    "C:\\Workout\\traffic\\Api\\ApiDomain\\ApiDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Workout\\traffic\\Api\\ApiDomain\\ApiDomain.csproj",
+        "projectName": "ApiDomain",
+        "projectPath": "C:\\Workout\\traffic\\Api\\ApiDomain\\ApiDomain.csproj",
         "packagesPath": "C:\\Users\\pa21\\.nuget\\packages\\",
-        "outputPath": "C:\\Workout\\traffic\\Api\\Domain\\obj\\",
+        "outputPath": "C:\\Workout\\traffic\\Api\\ApiDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pa21\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,22 +39,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.6, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -1371,6 +1371,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "ApiDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ApiDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiDomain.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5315,6 +5325,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "ApiDomain/1.0.0": {
+      "type": "project",
+      "path": "../ApiDomain/ApiDomain.csproj",
+      "msbuildProject": "../ApiDomain/ApiDomain.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -5323,6 +5338,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ApiDomain >= 1.0.0",
       "Domain >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1"
     ]
@@ -5333,11 +5349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workout\\traffichook\\ApiMagazine\\ApiMagazine\\Api.csproj",
+      "projectUniqueName": "C:\\Workout\\traffic\\Api\\ApiMagazine\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Workout\\traffichook\\ApiMagazine\\ApiMagazine\\Api.csproj",
+      "projectPath": "C:\\Workout\\traffic\\Api\\ApiMagazine\\Api.csproj",
       "packagesPath": "C:\\Users\\pa21\\.nuget\\packages\\",
-      "outputPath": "C:\\Workout\\traffichook\\ApiMagazine\\ApiMagazine\\obj\\",
+      "outputPath": "C:\\Workout\\traffic\\Api\\ApiMagazine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pa21\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5354,8 +5370,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Workout\\traffichook\\ApiMagazine\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Workout\\traffichook\\ApiMagazine\\Domain\\Domain.csproj"
+            "C:\\Workout\\traffic\\Api\\ApiDomain\\ApiDomain.csproj": {
+              "projectPath": "C:\\Workout\\traffic\\Api\\ApiDomain\\ApiDomain.csproj"
+            },
+            "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Workout\\traffic\\Api\\Domain\\Domain.csproj"
             }
           }
         }
