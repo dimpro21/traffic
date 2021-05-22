@@ -1,0 +1,1 @@
+Scaffold-DbContext "Server=.\;Database=traffichook;User id=traffichook;Password=d3YOdHPKLRZvYNMI;Trusted_Connection=True;" -StartupProject Domain Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Project Domain -force
