@@ -60,7 +60,7 @@ namespace Domain.Models
                 entity.Property(e => e.SensorId).HasColumnName("sensorId");
 
                 entity.Property(e => e.Speed)
-                    .HasColumnType("decimal(3, 2)")
+                    .HasColumnType("decimal(5, 3)")
                     .HasColumnName("speed");
 
                 entity.Property(e => e.TypeId).HasColumnName("typeId");

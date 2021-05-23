@@ -17,5 +17,14 @@ namespace Domain.Repository
                 return result;
             }
         }
+
+        public Sensor GetSensorById(int key)
+        {
+            using (var dc = new traffichookContext())
+            {
+                Sensor result = dc.Sensors.Where(i => i.KeyExt == key).FirstOrDefault();
+                return result;
+            }
+        }
     }
 }

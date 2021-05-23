@@ -18,5 +18,6 @@ namespace Domain.Interfaces
         /// </summary>
         /// <returns></returns>
         public List<VehicleDatum> GetAllVhicleDataForSensor(int key, DateTime firstDate, DateTime secondDate);
+        public List<VehicleDatum> GetAllVhicleData();
     }
 }

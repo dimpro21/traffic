@@ -23,6 +23,7 @@ namespace Api.Controllers
         {
             repository = rep;
         }
+        
 
         /// <summary>
         /// /VhicleData/AddData
@@ -31,13 +32,13 @@ namespace Api.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPost]
-        public string AddSensor(VehicleDatum model)
+        public string AddData(VehicleDatum model)
         {
             string result = "";
             try
             {
                 VehicleDatumHelper.Add(model);
-            }
+            }          
             catch (Exception ex)
             {
                 result = ex.Message;
@@ -71,11 +72,26 @@ namespace Api.Controllers
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
+        [HttpPost]
         public string GetDataForSensor(GetDataForSensor model)
         {
             try
             {
                 var result = repository.GetAllVhicleDataForSensor(model.key, model.firstDate, model.secondDate);
+                return JsonConvert.SerializeObject(result);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        [HttpGet]
+        public string GetAllData()
+        {
+            try
+            {
+                var result = repository.GetAllVhicleData();
                 return JsonConvert.SerializeObject(result);
             }
             catch

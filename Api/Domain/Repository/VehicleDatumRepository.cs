@@ -39,5 +39,15 @@ namespace Domain.Repository
                 return result;
             }
         }
+
+        public List<VehicleDatum> GetAllVhicleData()
+        {
+            using (var dc = new traffichookContext())
+            {
+                var result = dc.VehicleData.ToList();
+                return result;
+            }
+        }
+
     }
 }

@@ -30,6 +30,7 @@ namespace Api
         {
             services.AddControllers();
             services.AddTransient<IVehicleDatumRepository, VehicleDatumRepository>();
+            services.AddTransient<ISensorRepository, SensorRepository>();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                .AddCookie(options => //CookieAuthenticationOptions

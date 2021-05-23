@@ -1,0 +1,19 @@
+http://localhost:42929/Sensor/AddSensor/?key=2
+http://localhost:42929/Sensor/GetAllSensor
+http://localhost:42929/Sensor/GetSensorByKey/?key=2
+
+http://localhost:42929/VhicleData/GetAllData
+http://localhost:42929/VhicleData/AddData
+{
+    "TypeId":2,
+    "Date":"2021-05-13T00:00:00",
+    "Speed":30.5,
+    "SensorId":1    
+}
+
+http://localhost:42929/VhicleData/GetDataForSensor
+{
+  "key": 2,
+  "firstDate": "2021-04-13T00:00:00",
+  "secondDate": "2021-06-13T00:00:00"
+}

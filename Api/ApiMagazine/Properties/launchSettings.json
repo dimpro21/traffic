@@ -12,15 +12,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "Product/GetAllProduct",
+      "launchUrl": "Home/Index",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ApiMagazine": {
+    "TrafficHookApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "VhicleData/GetAllData",
+      "launchUrl": "Home/Index",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
